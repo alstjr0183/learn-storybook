@@ -6,8 +6,8 @@ export default {
   title: 'Input',
   component: Input,
   argTypes: {
-    backgroundColor: { control: 'color' },
-    border: ''
+    title: '',
+    options: []
   },
 };
 
@@ -16,6 +16,6 @@ const Template = (args) => <Input {...args} />;
 export const Basic = Template.bind({});
 
 Basic.args = {
-  backgroundColor: 'white',
-  border: ''
+  title: 'Price',
+  options: ['USA', 'CAD', 'EUR']
 };
